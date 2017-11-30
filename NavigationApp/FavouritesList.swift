@@ -8,33 +8,33 @@
 
 import Foundation
 
-class FavoriteList{
-    static let sharedFavouritesList = FavoriteList()
-    private(set) var favorites:[String]
+class FavouritesList{
+    static let sharedFavouritesList = FavouritesList()
+    private(set) var favourites:[String]
     
     init() {
         let defoults = UserDefaults.standard
         let storedFavorites = defoults.object(forKey: "favorites") as? [String]
-        favorites = storedFavorites != nil ? storedFavorites! : []
+        favourites = storedFavorites != nil ? storedFavorites! : []
     }
     
     func addFavorite(fontName: String) {
-        if !favorites.contains(fontName){
-            favorites.append(fontName)
-            saveFavorites()
+        if !favourites.contains(fontName){
+            favourites.append(fontName)
+            saveFavourites()
         }
     }
     
-    private func saveFavorites(){
+    private func saveFavourites(){
         let defaults = UserDefaults.standard
-        defaults.set(favorites, forKey: "favorites")
+        defaults.set(favourites, forKey: "favorites")
         defaults.synchronize()
     }
     
     private func removeFavorite(fontName: String){
-        if let index = favorites.index(of: fontName){
-            favorites.remove(at: index)
-            saveFavorites()
+        if let index = favourites.index(of: fontName){
+            favourites.remove(at: index)
+            saveFavourites()
         }
     }
     

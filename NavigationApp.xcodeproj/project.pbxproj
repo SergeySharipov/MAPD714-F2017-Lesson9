@@ -11,8 +11,8 @@
 		3F4B40051FCF832C00396009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4B40031FCF832C00396009 /* Main.storyboard */; };
 		3F4B40071FCF832C00396009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4B40061FCF832C00396009 /* Assets.xcassets */; };
 		3F4B400A1FCF832C00396009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4B40081FCF832C00396009 /* LaunchScreen.storyboard */; };
-		3F4B40121FCF888E00396009 /* FavouriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B40111FCF888E00396009 /* FavouriteList.swift */; };
-		3F4B40141FCF8EF200396009 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B40131FCF8EF200396009 /* TableViewController.swift */; };
+		3F4B40121FCF888E00396009 /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B40111FCF888E00396009 /* FavouritesList.swift */; };
+		3F4B40141FCF8EF200396009 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B40131FCF8EF200396009 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		3F4B40061FCF832C00396009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F4B40091FCF832C00396009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F4B400B1FCF832C00396009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F4B40111FCF888E00396009 /* FavouriteList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteList.swift; sourceTree = "<group>"; };
-		3F4B40131FCF8EF200396009 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3F4B40111FCF888E00396009 /* FavouritesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
+		3F4B40131FCF8EF200396009 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				3F4B40061FCF832C00396009 /* Assets.xcassets */,
 				3F4B40081FCF832C00396009 /* LaunchScreen.storyboard */,
 				3F4B400B1FCF832C00396009 /* Info.plist */,
-				3F4B40111FCF888E00396009 /* FavouriteList.swift */,
-				3F4B40131FCF8EF200396009 /* TableViewController.swift */,
+				3F4B40111FCF888E00396009 /* FavouritesList.swift */,
+				3F4B40131FCF8EF200396009 /* RootViewController.swift */,
 			);
 			path = NavigationApp;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4B40121FCF888E00396009 /* FavouriteList.swift in Sources */,
+				3F4B40121FCF888E00396009 /* FavouritesList.swift in Sources */,
 				3F4B40001FCF832C00396009 /* AppDelegate.swift in Sources */,
-				3F4B40141FCF8EF200396009 /* TableViewController.swift in Sources */,
+				3F4B40141FCF8EF200396009 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +304,7 @@
 				3F4B40101FCF832C00396009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
